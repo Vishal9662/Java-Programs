@@ -1,0 +1,48 @@
+Collection is used for store and manipulate the group of objects..
+
+The Iterable is root interface of all collection classes, It is used for iterating data in forward direction only, It has 3 methods 1-hasNext(), 2-next(), 3-remove()
+
+The collection is an Interface. It implements 3 Interface (1)-List (3)-Set (3)-Queue 
+
+List has 4 class, 1-ArrayList 2-LinkedList 3-Vector 4-Stack
+
+Set has 3 class, 1-HashSet 2-LinkedHashSet 3-TreeSet
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> ArrayList :-
+It has 3 constructors 1-ArrayList() 2-ArrayList(Collection c) 3-ArrayList(int capacity)
+It don't allow duplicate values
+It maintains Insertion order
+The initial capacity is 10 and load factor is 100% or 1.
+
+
+--> LinkedList :-
+Same as ArrayList but different in internal working...
+
+
+--> HashSet :-
+The HashSet class extends AbstractSet class which implements Set interface.
+The Set interface inherits Collection and Iterable interfaces in hierarchical order.
+A List can contain duplicate elements whereas Set contains unique elements only.
+It don't allow duplicates, It contains only unique values..
+It allows null value.
+It not maintain the insertion order.
+It is best for search operation.
+The initial capacity is 16 and load factor is 0.75 or 70%
+
+
+--> TreeSet :-
+TreeSet class contains unique elements only like HashSet.
+TreeSet class access and retrieval times are quite fast.
+TreeSet class doesn't allow null elements.
+TreeSet class is non-synchronized.
+TreeSet class maintains ascending order.
+In TreeSet heterogeneous is not allowed.. 
+
+It internally uses a binary search tree, and it stores data into tree format.
+If the element is bigger then current then it will store to right side,
+and If element is lesser then current then it will store to left side..
+
+It implements the SortedSet Set Interface, it has some special methods, like..
+first(), last(), headSet(), tailSet(), subSet(), comparator(), this all methods explained while executing it..

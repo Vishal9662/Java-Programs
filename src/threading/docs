@@ -1,0 +1,38 @@
+Why we need threads ::-->
+				It is useful for performing multiple things at a same time, 
+				Threads can be used to perform complicated tasks in the background without interrupting the main program.
+				
+				
+Thread Scheduler :->
+				It is a component or part of JVM that decides which threads is execute or which thread is wait..
+				If the multiple Thread is in Runnable State then schedular pick it one of them and ignore others
+				There are two factors for Scheduling a thread.. (1)-Priority, (2)-Time of Arrival 
+				
+Priority : The priority of each thread is in between 1 to 10. If a thread has higher priority then schedular will pick it first..
+
+Time of Arrival : If multiple threads has same priority then schedular think about time of arrival.(Je Thread pela aavse ene pela execute krse..)
+
+If the multiple thread has same priority and same arrival time then schedular follows FCFS(First Come First Serve) Algoritham..
+
+--> Thread.sleep() Method..
+The sleep() method used for hold or blocked the thread..
+ There are 2 types , sleep(long mls) , sleep(long mls, int nanoseconds)
+ where as mls means times in milliseconds
+ 
+ --> Thread.join() Method..
+ When the join() invoked then the current thread is stop its execution and thread goes into the wait state..
+ It wait untill the thread is dead.
+ There are : 1 - join(long mls), 2- join(long mls, int nanosecond)
+ 
+ 
+ 
+ --> Daemon Thread...
+ It is a service provider thread that provides the service to the user for the supporting background task...
+ It depends on user created threads, and it has low priority..
+ When all user created threads are dies then JVM automatically terminated this thread...
+ If there is no any user created thread then JVM automatically terminated it.
+ There are many java daemon threads like gc, finalizer, etc...
+ 
+ 
+ --> Thread Pool...
+ 

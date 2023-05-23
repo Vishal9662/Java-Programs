@@ -1,0 +1,36 @@
+Reflection API means group of classes
+Reflection is used for get the runtime behaviour of class at run time by JVM.
+	
+Classes Of java.lang.reflect.*; package :--
+-> Field, -> Method, -> Constructor, -> Modifier
+
+--> Field Class is used to get information about datatype, access modifier, name and value of variables..
+
+--> Method Class is used to get information about access modifier, return type, name, parameter type and excepption type of methods..
+
+--> Constructor Class is used to get information about access modifier, name and parameter type of constructor..
+
+--> Modifier Class is used to get information about particular access modifier..
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Methods of java.lang.Class
+
+-> public getName() - returns class name.
+-> public static Class forName() - loads the class and returns the reference of Class instance.
+-> public Object newInstance() - creates new instance.
+-> public boolean isInterface()	- checks if it is interface.
+-> public boolean isArray() - checks if it is array.
+-> public boolean isPrimitive()	- checks if it is primitive.
+-> public Class getSuperclass() - returns the superclass class reference.
+-> public Field[] getDeclaredFields() -	returns the total number of fields of this class.
+-> public Method[] getDeclaredMethods() - returns the total number of methods of this class.
+-> public Constructor[] getDeclaredConstructors() -	returns the total number of constructors of this class.
+-> public Method getDeclaredMethod(String name,Class[] parameterTypes) - returns the method class instance.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Disadvantages of Reflection API:->
+
+-> Reflection is slower..	(Jo aapde evu kaik fast operation perfom krvu hoy to reflecton avoid krvu pde..)
+						
+-> Reflective code breaks abstractions and therefore may change behavior with upgrades of the platform.

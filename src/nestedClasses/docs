@@ -1,0 +1,47 @@
+A class is declared inside class that is called Inner class or nested class..
+
+--> We use Inner classes to logically group classes and interfaces in one place to be more readable and maintainable.
+
+
+	Advantages Of Nested Classes : 
+-> The nested classes can access all data members and methods including private also of outer class..
+-> The Nested classes are used to develop readable and maintainable code.
+-> The Nested classes requires the less code to write.
+ 
+
+	Type of Nested Classes : 
+	(Non - static)
+-> Member Inner Class	-> A class which created within class and outside method..
+-> Anonymous Inner Class-> A class created for implementing an interface or extending class. The java compiler decides its name..
+-> Local Inner Class	-> A class which create within method..
+
+-> Static Nested Class	-> A static class which created within class..
+
+-> Nested Interface		-> An Interface which created within Interface or class..
+
+	df bw Nested and Inner Class :
+-> The nested class don't require a object is that like static where as Inner class requires a object is that like non-static..
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+	Member Class :
+-> A non-static class which created within class but outside the method that is known as member inner class or regular inner class..
+
+
+	Anonymous Class :
+-> A class which has no name that is known as Anonymous Inner Class. It can create with Abstract or concrete class and Interface..
+
+--> Whatever we gave name to the Anonymous Inner Class but it's name is decided by compiler (Internally), which extends super class and override the method..
+
+
+	Local Inner Class :
+-> 	A class which created in class and in the method that is known as Local Inner class..
+
+
+	Static Nested Class :
+-> A static class that is declared inside the class that is known as Static nested class..
+-> It can access private and static data members of outer class but it can not be access non-static data members..
+
+
+	Nested Interface :
+-> A interface is created inside interface or class..
+-> The nested or Inner interface is must be public, if it is created in interface, but if it is created in class then it can be anything...
